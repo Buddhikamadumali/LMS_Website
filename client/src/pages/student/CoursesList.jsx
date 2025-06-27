@@ -16,7 +16,7 @@ const CoursesList = () => {
   useEffect(() => {
       if(allCourses && allCourses.length >0){
         const tempCourses = allCourses.slice()
-        console.log(tempCourses)
+        
         input ?
         setFilteredCourse(
           tempCourses.filter(
@@ -24,7 +24,7 @@ const CoursesList = () => {
           ))
           : setFilteredCourse(tempCourses)
 
-          console.log(filteredCourse)
+          
       }
   },[allCourses,input])
 
